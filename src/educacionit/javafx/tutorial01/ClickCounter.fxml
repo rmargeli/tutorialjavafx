@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="435.0" prefWidth="322.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="educacionit.javafx.tutorial01.ClickCounterController">
+    <children>
+        <Button layoutX="72.0" layoutY="361.0" onAction="#activarSemaforo" prefHeight="22.0" prefWidth="143.0" text="Activar Semaforo" />
+        <Label layoutX="62.0" layoutY="117.0" minHeight="16" minWidth="69" prefHeight="17.0" prefWidth="79.0" text="Click Counter:" wrapText="true" />
+      <TextField fx:id="fld_cantidad" alignment="CENTER" disable="true" layoutX="141.0" layoutY="113.0" promptText="0" />
+      <Cylinder layoutX="110.0" layoutY="101.0" radius="0.77" />
+      <Polygon fill="#ff1f1f" layoutX="80.0" layoutY="69.0" smooth="false" stroke="BLACK" strokeType="INSIDE">
+        <points>
+          <Double fx:value="-50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="0.0" />
+          <Double fx:value="-60.0" />
+        </points>
+      </Polygon>
+      <Polygon fill="#ff371f" layoutX="238.0" layoutY="69.0" stroke="BLACK" strokeType="INSIDE">
+        <points>
+          <Double fx:value="-50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="0.0" />
+          <Double fx:value="-60.0" />
+        </points>
+      </Polygon>
+      <Button layoutX="130.0" layoutY="70.0" mnemonicParsing="false" onAction="#Restar" prefHeight="22.0" prefWidth="60.0" text="Restar" />
+      <Circle fx:id="rojo" layoutX="62.0" layoutY="184.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="amarillo" layoutX="62.0" layoutY="244.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="verde" layoutX="62.0" layoutY="304.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button layoutX="143.0" layoutY="233.0" onAction="#ponerAmarillo" prefHeight="22.0" prefWidth="94.0" text="Amarillo" />
+      <Button layoutX="143.0" layoutY="293.0" onAction="#ponerVerde" prefHeight="22.0" prefWidth="94.0" text="Verde" />
+      <Button layoutX="141.0" layoutY="173.0" onAction="#ponerRojo" prefHeight="22.0" prefWidth="94.0" text="Rojo" />
+      <Button layoutX="72.0" layoutY="393.0"  prefHeight="22.0" prefWidth="143.0" text="Detener Semaforo" />
+    </children>
+</AnchorPane>
